@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fintech.css">
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-3">
+    <h1>Fintech</h1>
+    <p>Seu controle financeiro simplificado</p>
+  </header>
+
+  <main class="container mt-4">
+    <!-- Telas do app -->
+  </main>
+
+  <footer class="bg-dark text-white text-center py-2">
+    <p>&copy; 2024 Fintech</p>
+  </footer>
+</body>
+</html>
+<section class="card mx-auto p-4 shadow-sm" style="max-width: 400px;">
+    <h2 class="text-center text-primary">Cadastrar Usuário</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nomeUsuario" class="form-label">Nome Completo</label>
+        <input type="text" class="form-control" id="nomeUsuario" placeholder="Digite seu nome completo" required>
+      </div>
+      <div class="mb-3">
+        <label for="emailUsuario" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="emailUsuario" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="mb-3">
+        <label for="senhaUsuario" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="senhaUsuario" placeholder="Crie uma senha (mínimo 8 caracteres)" minlength="8" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Confirmar Cadastro</button>
+    </form>
+  </section>
+  <section class="card mx-auto p-4 shadow-sm mt-5" style="max-width: 400px;">
+    <h2 class="text-center text-success">Cadastrar Coleta</h2>
+    <form>
+      <div class="mb-3">
+        <label for="tipoColeta" class="form-label">Tipo de Coleta</label>
+        <select class="form-select" id="tipoColeta" required>
+          <option value="" disabled selected>Selecione o tipo</option>
+          <option value="entrada">Entrada</option>
+          <option value="saida">Saída</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="dataColeta" class="form-label">Data da Coleta</label>
+        <input type="date" class="form-control" id="dataColeta" required>
+      </div>
+      <div class="mb-3">
+        <label for="valorColeta" class="form-label">Valor</label>
+        <input type="number" class="form-control" id="valorColeta" placeholder="Digite o valor (R$)" step="0.01" required>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Salvar Coleta</button>
+    </form>
+  </section>
+  <section class="card mx-auto p-4 shadow-sm mt-5" style="max-width: 400px;">
+    <h2 class="text-center text-danger">Cadastrar Despesa</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nomeDespesa" class="form-label">Nome da Despesa</label>
+        <input type="text" class="form-control" id="nomeDespesa" placeholder="Ex.: Alimentação" required>
+      </div>
+      <div class="mb-3">
+        <label for="categoriaDespesa" class="form-label">Categoria</label>
+        <select class="form-select" id="categoriaDespesa" required>
+          <option value="" disabled selected>Selecione a categoria</option>
+          <option value="alimentacao">Alimentação</option>
+          <option value="transporte">Transporte</option>
+          <option value="lazer">Lazer</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="dataVencimentoDespesa" class="form-label">Data de Vencimento</label>
+        <input type="date" class="form-control" id="dataVencimentoDespesa" required>
+      </div>
+      <div class="mb-3">
+        <label for="valorDespesa" class="form-label">Valor</label>
+        <input type="number" class="form-control" id="valorDespesa" placeholder="Digite o valor (R$)" step="0.01" required>
+      </div>
+      <button type="submit" class="btn btn-danger w-100">Salvar Despesa</button>
+    </form>
+  </section>
+
